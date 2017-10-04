@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Tim Caine Topic 1</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h>JSON Parse and Stringify</h>
+        
+        <p>Parse first</p>
+        <p id="parse"></p>
+        <p>Stringify Second</p>
+        <p id="stringify"></p>
+        <script>
+            var person = { "name":"Sydney Crosby", "country":"Canada", "team":"Penguins" };
+            //Parse
+            var parse = JSON.parse('{ "name":"Sydney Crosby", "country":"Canada", "team":"Penguins" }');
+            document.getElementById("parse").innerHTML = parse.name + " is from " + parse.country + ".";
+            //Stringify
+            var stringify = JSON.stringify(person);
+            document.getElementById("stringify").innerHTML = stringify;
+        </script>
+        
+    </body>
+</html>

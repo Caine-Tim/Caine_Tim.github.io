@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Tim Caine Topic 2</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h>Javascript Functions, Properties, Methods</h>
+        <p>Below is an object that returns the information using a method/function.</p>
+        <p id="info"></p>
+        
+        <script>
+        var person = {
+            firstName   : "Evgeni",
+            lastName    : "Malkin",
+            nickName    : "Geno",
+            homeTown    : "Russia",
+            team        : "Penguins",
+            stanelyCups : 3,
+            fullPerson  : function() {
+                return this.firstName + " \"" + this.nickName + "\" " + this.lastName + " is from " + this.homeTown + ". " + this.nickName + " has won " + this.stanelyCups + " with the " + this.team + ".";
+            }
+        };
+        
+        document.getElementById("info").innerHTML = person.fullPerson();
+        </script>
+        
+    </body>
+</html>

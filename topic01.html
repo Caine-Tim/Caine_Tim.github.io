@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Tim Caine Topic 1</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        
+        <h>JavaScript – Loops, Conditional Statements, Functions, Arrays</h><br><br>
+        <h>Example</h><br><br>
+
+        <p>Type a word or phrase and see it appear</p>
+        <form id="word" action="">
+            Word or Phrase: <input type="text" name="word" value=""><br>
+        </form> 
+
+        <button onclick="wordFunction()">Submit</button>
+
+        <p id="loop"></p>
+
+        <script>
+            function wordFunction() {
+                var input = document.getElementById("word");
+                var text = "";
+                var i;
+                for (i = 0; i < input.length ;i++) {
+                    text += input.elements[i].value + "<br>";
+                }
+                document.getElementById("loop").innerHTML = text;
+            }
+        </script>
+        
+    </body>
+</html>
