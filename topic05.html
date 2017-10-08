@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Tim Caine Topic 5</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h>Local Storing</h>
+        <p>Choose a hockey team</p>
+        <select id="teams" onChange="change();">
+            <option value="0">- SELECT -</option>
+            <option value="1">Penguins</option>
+            <option value="2">BlackHawks</option>
+            <option value="3">Lightning</option>
+            <option value="4">Kings</option>
+        </select>
+        <p id="display"></p>
+        <script>
+            var pittsburgh = {"Name: ":"Penguins", "City: ":"Pittsburgh", "Arena: ":"PPG Paints Arena", "Captain: ":"Sydney Crosby"};
+            var chicago = {"Name: ":"BlackHawks", "City: ":"Chicago", "Arena: ":"United Center", "Captain: ":"Jonathan Toews"};
+            var tampa = {"Name: ":"Lightning", "City: ":"Tampa Bay", "Arena: ":"Amalie Arena", "Captain: ":"Steven Stamkos"};
+            var losAngeles = {"Name: ":"Kings", "City: ":"Los Angelas", "Arena: ":"Staples Center", "Captain: ":"Anže Kopitar"};
+            
+            function change ()
+            {
+                document.getElementById("display").innerHTML = " ";
+                var selected = document.getElementById("teams");
+                var value = selected.options[selected.selectedIndex].value;
+                if (value == "1") {
+                    for (x in pittsburgh) {
+                        document.getElementById("display").innerHTML += x + pittsburgh[x] +"<br>";
+                    }
+                }
+                if (value == "2") {
+                    for (x in chicago) {
+                        document.getElementById("display").innerHTML += x + chicago[x] +"<br>";
+                    }
+                }
+                if (value == "3") {
+                    for (x in tampa) {
+                        document.getElementById("display").innerHTML += x + tampa[x] +"<br>";
+                    }
+                }
+                if (value == "4") {
+                    for (x in losAngeles) {
+                        document.getElementById("display").innerHTML += x + losAngeles[x] +"<br>";
+                    }
+                }
+            }
+            
+        </script>
+    
+    </body>
+</html>
