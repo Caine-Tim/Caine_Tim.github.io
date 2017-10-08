@@ -16,11 +16,35 @@
             <option value="4">Kings</option>
         </select>
         <p id="display"></p>
+        <p>Choose a name to change</p>
+        <select id="name" onChange="changeName();">
+            <option value="0">- SELECT -</option>
+            <option value="1">Name</option>
+            <option value="2">City</option>
+            <option value="3">Arena</option>
+            <option value="4">Captain</option>
+        </select>
+        <p id="displayChange"></p>
         <script>
             var pittsburgh = {"Name: ":"Penguins", "City: ":"Pittsburgh", "Arena: ":"PPG Paints Arena", "Captain: ":"Sydney Crosby"};
+            //local storage
+            storePitt = JSON.stringify(pittsburgh);
+            localStorage.setItem("Pitt", storePitt);
+            
             var chicago = {"Name: ":"BlackHawks", "City: ":"Chicago", "Arena: ":"United Center", "Captain: ":"Jonathan Toews"};
+            //local storage
+            storeChi = JSON.stringify(chicago);
+            localStorage.setItem("Chi", storeChi);
+            
             var tampa = {"Name: ":"Lightning", "City: ":"Tampa Bay", "Arena: ":"Amalie Arena", "Captain: ":"Steven Stamkos"};
+            //local storage
+            storeTampa = JSON.stringify(tampa);
+            localStorage.setItem("Tampa", storeTamps);
+            
             var losAngeles = {"Name: ":"Kings", "City: ":"Los Angelas", "Arena: ":"Staples Center", "Captain: ":"Anže Kopitar"};
+            //local storage
+            storeLA = JSON.stringify(losAngeles);
+            localStorage.setItem("LA", storeLA);
             
             function change ()
             {
