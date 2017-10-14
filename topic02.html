@@ -7,23 +7,33 @@
     </head>
     <body>
         <h>Javascript Functions, Properties, Methods</h>
-        <p>Below is an object that returns the information using a method/function.</p>
+        
+        <p>Please submit some information about yourself</p>
+        
+        <p>First Name: <input type="text" id="firstName"></p>
+        <p>Current City: <input type="text" id="currentCity"></p>
+        <p>Born in (city): <input type="text" id="bornCity"></p>
+        <p>Favorite Food: <input type="text" id="food"></p>
+        
+        <button onclick="createInfo()">Submit</button>
+        
         <p id="info"></p>
         
         <script>
-        var person = {
-            firstName   : "Evgeni",
-            lastName    : "Malkin",
-            nickName    : "Geno",
-            homeTown    : "Russia",
-            team        : "Penguins",
-            stanelyCups : 3,
-            fullPerson  : function() {
-                return this.firstName + " \"" + this.nickName + "\" " + this.lastName + " is from " + this.homeTown + ". " + this.nickName + " has won " + this.stanelyCups + " with the " + this.team + ".";
+            function createInfo() {
+                var name = document.getElementById("firstName").value;
+                var currentCity = document.getElementById("currentCity").value;
+                var bornCity = document.getElementById("bornCity").value;
+                var food = document.getElementById("food").value;
+                var info = {
+                    name : name,
+                    currentCity : currentCity,
+                    bornCity : bornCity,
+                    food : food
+                };
+                document.getElementById("info").innerHTML = "Your name is " + info.name + ", and your favorite food is " + info.food + "! You currently live in " + info.currentCity + ", but you were born in " + info.bornCity + ".";
             }
-        };
         
-        document.getElementById("info").innerHTML = person.fullPerson();
         </script>
         
     </body>
