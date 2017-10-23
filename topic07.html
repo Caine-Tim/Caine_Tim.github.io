@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tim Caine Topic 7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h>Topic 7: Manipulating CSS Class Properties Using JavaScript</h><br>
+
+        <p id="color">Click the button to change the color of this text</p>
+        <button onclick="colorFunction()">Change Color</button>
+        <p>Click this button to change it back</p>
+        <button onclick="changeBack()">Change Back</button><br>
+        <p>Click to resize image</p>
+        <button onclick="resizeImage()">Resize</button><br><br>
+        <img id="pitt" src="pittsburgh.jpg">
+        <script>
+            function colorFunction() {
+                document.getElementById("color").style.color = "blue";
+            }
+            
+            function changeBack() {
+                document.getElementById("color").style.color = "black";
+            }
+            function resizeImage() {
+                document.getElementById("pitt").style.width = "50%";
+            }
+        </script>
+    </body>
+</html>

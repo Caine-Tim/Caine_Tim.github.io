@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     max-width: 800px;
     padding: 2em 2em 4em;
+    height:100%;
 }
 
 h {
@@ -22,4 +23,71 @@ h1 {
 
 a {
     color: #0083e8;
+}
+
+#xbox {
+     position:relative;
+     margin:0 auto;
+}
+            
+#xbox img {
+      position:absolute;
+      left:0;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+}
+            
+#xbox img.top:hover {
+     opacity:0;
+}
+
+#xboxAnimation {
+     position:relative;
+     margin:0 auto;
+}
+            
+#xboxAnimation img {
+      position:absolute;
+      left:0;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+    
+}
+            
+@keyframes cf3FadeInOut {
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:1;
+  }
+  55% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+#xboxAnimation img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+animation-direction: alternate;
+}
+
+.center {
+    margin:0 auto;
+    width: 600px;
+}
+
+.centerBelow {
+    margin:0 auto;
+    width: 600px;
+    top: 400px;
 }

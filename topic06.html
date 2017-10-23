@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tim Caine Topic 6</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h>Topic 6: DOM Manipulation Using createElement, appendChild, insertBefore etc.</h><br>
+
+        <p>Click the button to add text to the screen</p>
+        <button onclick="myFunction()">Click Here</button>
+        <script>
+            function myFunction() {
+                var para = document.createElement("P");
+                var t = document.createTextNode("You clicked the button!");
+                para.appendChild(t);
+                document.body.appendChild(para);
+            }
+        </script>
+    </body>
+</html>
