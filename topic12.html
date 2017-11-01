@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tim Caine Topic 12</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h>Topic 12: Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries</h><br><br>
+        
+        <h>Click the button below to skew the picture</h><br><br>
+        <button type="button" onclick="skew()">Transform</button><br><br>
+        
+        <img id="xboxSkew" src="xbox.jpg"><br><br>
+        
+        <h>Click the button below to rotate the picture</h><br><br>
+        <button type="button" onclick="rotate()">Transform</button><br><br>
+        
+        <img id="xbox" src="xbox.jpg"><br><br>
+        
+        <script>
+            function skew () {
+                document.getElementById("xboxSkew").style.WebkitTransform = "skewX(20deg)";
+                document.getElementById("xboxSkew").style.msTransform = "skewX(20deg)";
+                document.getElementById("xboxSkew").style.transform = "skewX(20deg)";
+            }
+            
+            function rotate () {
+                document.getElementById("xbox").style.WebkitTransform = "rotate(20deg)";
+                document.getElementById("xbox").style.msTransform = "rotate(20deg)";
+                document.getElementById("xbox").style.transform = "rotate(20deg)";
+            }
+        </script>
+    </body>
+</html>

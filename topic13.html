@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tim Caine Topic 13</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <style type="text/css">
+            .classname {
+                -webkit-animation-name: cssAnimation;
+                -webkit-animation-duration:3s;
+                -webkit-animation-iteration-count: 1;
+                -webkit-animation-timing-function: ease;
+                -webkit-animation-fill-mode: forwards;
+            }
+            @-webkit-keyframes cssAnimation {
+                from {
+                    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+                }
+                to {
+                    -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+                }
+            }
+</style>
+    </head>
+    <body>
+        <h>Topic 13: Designing, Defining, and Triggering CSS3 Animations without Custom Libraries</h><br><br>
+        
+        <h>Click the button below to animate the picture</h><br><br>
+        <button type="button" onclick="ani()">Animation</button><br><br>
+        <img id="img" src="xbox.jpg" width="50%">
+        
+        <script>
+            function ani(){
+                document.getElementById('img').className ='classname';
+            }
+        </script>
+    </body>
+</html>

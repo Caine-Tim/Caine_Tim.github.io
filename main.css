@@ -58,7 +58,7 @@ a {
     
 }
             
-@keyframes cf3FadeInOut {
+@keyframes xboxFade {
   0% {
     opacity:1;
   }
@@ -74,7 +74,7 @@ a {
 }
 
 #xboxAnimation img.top {
-animation-name: cf3FadeInOut;
+animation-name: xboxFade;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
 animation-duration: 4s;
