@@ -15,13 +15,29 @@
         <div id="info"></div>
         
         <script>
-            var ourRequest = new XMLHttpRequest();
-            ourRequest.open("GET", "json_text.txt", true);
-            ourRequest.onload = function() {
-                var ourData = JSON.parse(ourRequest.responseText);
-                console.log(ourData[0]);
+            var infoContainer = document.getElementById("info");
+            var btn = document.getElementById("btn");
+            
+            btn.addEventListener("click", function() {
+                var ourRequest = new XMLHttpRequest();
+                ourRequest.open("GET", "json_text.txt", true);
+                ourRequest.onload = function() {
+                    var ourData = JSON.parse(ourRequest.responseText);
+                    renderHTML(ourData);
             };
-            ourRequest.send();
+                ourRequest.send();
+            });
+            
+            function renderHTML(data) {
+                var htmlString = "";
+                
+                for (i = 0; i < data.length; i++) {
+                    htmlString += "<p>" + data[i].name + ".</p>";
+                }
+                
+                infoContainer.insertAdjacentHTML('beforeend', htmlString);
+            }
+            
         </script>
 
     </body>
