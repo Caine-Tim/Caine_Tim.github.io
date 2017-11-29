@@ -91,3 +91,12 @@ animation-direction: alternate;
     width: 600px;
     top: 400px;
 }
+
+#chicagoButton {
+    display: block;
+    margin: 0 auto;
+}
+
+#chicago {
+    text-align: center;
+}
