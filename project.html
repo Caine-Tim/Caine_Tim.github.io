@@ -16,7 +16,7 @@
         
         <script>
             var ourRequest = new XMLHttpRequest();
-            ourRequest.open('GET', 'json_text.txt', true);
+            ourRequest.open("GET", "json_text.txt", true);
             ourRequest.onload = function() {
                 var ourData = JSON.parse(ourRequest.responseText);
                 console.log(ourData[0]);
