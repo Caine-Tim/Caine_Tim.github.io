@@ -1,4 +1,4 @@
-[
+
     {
         "team":"Pittsburgh",
         "player":"Sydney Crosby",
@@ -6,4 +6,3 @@
         "assists":35,
         "goals":15,
     }            
-]

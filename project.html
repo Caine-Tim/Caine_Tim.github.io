@@ -62,13 +62,18 @@
                 
                 //show json
                 var info = new XMLHttpRequest();
-                info.open("Get", "pitt.txt", true);
-                info.send(null);
                 
-                var name = JSON.parse(this.response);
-                var name = "Team: " + name.team;
+                info.onreadystatechange = function() {
+                    if(this.readyState == 4 && this.status == 200) {
+                        var name = JSON.parse(this.response);
+                        var name = "Team: " + name.team;
+                        
+                        document.getElementById("pitt").innerHTML = name;
+                    }
+                }
                 
-                document.getElementById("pitt").innerHTML = name;
+            info.open("Get", "pitt.txt", true);
+            info.send();
             }           
                 
         </script>
