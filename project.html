@@ -51,7 +51,8 @@
         
         <div id="pitt">
             <img id="crosby" src="crosby.jpg" style="display:none;"/>
-        </div>
+        </div><br>
+        <div id="pittInfo"></div>
         
         <script>
             //show pitt info
@@ -68,7 +69,7 @@
                         var name = JSON.parse(this.response);
                         var name = "Team: " + name.team;
                         
-                        document.getElementById("pitt").innerHTML = name;
+                        document.getElementById("pittInfo").innerHTML = name;
                     }
                 }
                 
