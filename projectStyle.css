@@ -89,6 +89,7 @@ h1 {
 
 #stats {
     width: 100%;
+    text-align: center;
 }
 
 #crosbyInfo {
@@ -100,6 +101,6 @@ h1 {
 }
 
 #malkinInfo {
+    display: inline-block;
     margin: 0 auto;
-    width: 175px;
 }
