@@ -1,7 +1,6 @@
-[
+
     {
-        "team":"Chicago",
+        "team":"Chicago Blackhawks",
         "player":"Towes",
         "position":"Center"
-    }            
-]
+    }
