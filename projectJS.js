@@ -13,7 +13,7 @@ function showCrosby() {
             var name = JSON.parse(this.response);
             var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assits: " + name.assists;
                         
-            document.getElementById("kesselInfo").innerHTML = name;
+            document.getElementById("crosbyInfo").innerHTML = name;
         }
     }
                 
