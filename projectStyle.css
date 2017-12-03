@@ -86,3 +86,22 @@ h1 {
     margin: 0 auto;
     width: 175px;
 }
+
+#stats {
+    width: 100%;
+    text-align: center;
+}
+
+#crosbyInfo {
+    float: left;
+}
+
+#kesselInfo {
+    float: right;
+}
+
+#malkinInfo {
+    display: inline-block;
+    margin: 0 auto;
+    width: 175px;
+}
