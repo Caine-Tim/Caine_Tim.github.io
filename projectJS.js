@@ -13,7 +13,7 @@ function showCrosby() {
             var name = JSON.parse(this.response);
             var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assits: " + name.assists;
                         
-            document.getElementById("pittInfo").innerHTML = name;
+            document.getElementById("kesselInfo").innerHTML = name;
         }
     }
                 
@@ -21,12 +21,12 @@ function showCrosby() {
     info.send();
 }
             
-//show chicago info
-function showChicago() {
+//show kessel info
+function showKessel() {
     'use strict';
     //show image
-    document.getElementById('toews').className ='classname';
-    document.getElementById('toews').style.display='block';
+    document.getElementById('kessel').className ='classname';
+    document.getElementById('kessel').style.display='block';
                 
     //show json
     var info = new XMLHttpRequest();
@@ -36,10 +36,33 @@ function showChicago() {
             var name = JSON.parse(this.response);
             var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assits: " + name.assists;
                         
-            document.getElementById("chicagoInfo").innerHTML = name;
+            document.getElementById("kesselInfo").innerHTML = name;
         }
     }
                 
-    info.open("Get", "chicago.txt", true);
+    info.open("Get", "kessel.txt", true);
+    info.send();
+}
+
+//show malkin info
+function showMalkin() {
+    'use strict';
+    //show image
+    document.getElementById('malkin').className ='classname';
+    document.getElementById('malkin').style.display='block';
+                
+    //show json
+    var info = new XMLHttpRequest();
+                
+    info.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            var name = JSON.parse(this.response);
+            var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assits: " + name.assists;
+                        
+            document.getElementById("malkinInfo").innerHTML = name;
+        }
+    }
+                
+    info.open("Get", "malkin.txt", true);
     info.send();
 }

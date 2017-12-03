@@ -8,24 +8,25 @@
         <script src="projectJS.js"></script>
     </head>
     <body>
-        
+        <div class="body">
         <h1>Hockey Stats</h1>
         <p style="text-align: center";>Click a button to view stats for individual players</p>
         <div id="buttons">
-            <div id="left"><button onclick="showCrosby()">Pittsburgh</button></div>
-            <div id="right"><button onclick="showChicago()">Chicago</button></div>
-            <div id="center"><button onclick="showTamps()">Tampa</button></div>
+            <div id="left"><button onclick="showCrosby()">Sydney Crosby</button></div>
+            <div id="right"><button onclick="showKessel()">Phil Kessel</button></div>
+            <div id="center"><button onclick="showMalkin()">Evgeni Malkin</button></div>
         </div><br><br>
         
         <div id="info">
-            <div id="left"><img id="crosby" src="crosby.jpg" style="display:none;"/></div>
-            <div id="right"><img id="toews" src="toews.jpg" style="display:none;"/></div>
+            <div id="picLeft"><img id="crosby" src="crosby.jpg" style="display:none;"/></div>
+            <div id="picRight"><img id="kessel" src="kessel.jpg" style="display:none;"/></div>
+            <div id="picCenter"><img id="malkin" src="malkin.jpg" style="display:none;"/></div>
         </div><br>
-        <div id="pittInfo"></div>
+        <div id="crosbyInfo"></div>
         
-        <div id="chicagoInfo"></div>
+        <div id="kesselInfo"></div>
         
         <audio autoplay loop><source src="pensTheme.mp3" type="audio/mpeg"></audio>
-
+        </div>
     </body>
 </html>

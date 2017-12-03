@@ -1,0 +1,7 @@
+{
+        "team":"Pittsburgh Penguins",
+        "player":"Evgeni Malkin",
+        "points":47,
+        "assists":25,
+        "goals":22
+        }            
