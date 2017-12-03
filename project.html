@@ -5,46 +5,27 @@
         <title>Tim Caine Topic 1</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="projectStyle.css">
+        <script src="projectJS.js"></script>
     </head>
     <body>
         
         <h1>Personal Project</h1>
         <p style="text-align: center";>Click a button to display information about the team captain for each team.</p>
-        <div id="pittDiv">
-            <button onclick="showPitt()">Click for Pittsburgh</button>
-        </div>
+        <div id="buttons">
+            <div id="left"><button onclick="showPitt()">Pittsburgh</button></div>
+            <div id="right"><button onclick="showChicago()">Chicago</button></div>
+            <div id="center"><button onclick="showTamps()">Tampa</button></div>
+        </div><br><br>
         
-        <div id="pitt">
-            <img id="crosby" src="crosby.jpg" style="display:none;"/>
+        <div id="info">
+            <div id="left"><img id="crosby" src="crosby.jpg" style="display:none;"/></div>
+            <div id="right"><img id="toews" src="toews.jpg" style="display:none;"/></div>
         </div><br>
         <div id="pittInfo"></div>
         
-        <audio autoplay loop><source src="pensTheme.mp3" type="audio/mpeg"></audio>
+        <div id="chicagoInfo"></div>
         
-        <script>
-            //show pitt info
-            function showPitt() {
-                //show image
-                document.getElementById('crosby').className ='classname';
-                document.getElementById('crosby').style.display='block';
-                
-                //show json
-                var info = new XMLHttpRequest();
-                
-                info.onreadystatechange = function() {
-                    if(this.readyState == 4 && this.status == 200) {
-                        var name = JSON.parse(this.response);
-                        var name = "Team: " + name.team + "<br>" + "Player: " + name.player;
-                        
-                        document.getElementById("pittInfo").innerHTML = name;
-                    }
-                }
-                
-            info.open("Get", "pitt.txt", true);
-            info.send();
-            }        
-                
-        </script>
+        <audio autoplay loop><source src="pensTheme.mp3" type="audio/mpeg"></audio>
 
     </body>
 </html>
