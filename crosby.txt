@@ -1,0 +1,8 @@
+
+        {
+        "team":"Pittsburgh Penguins",
+        "player":"Sydney Crosby",
+        "points":50,
+        "assists":35,
+        "goals":15
+        }            
