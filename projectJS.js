@@ -11,7 +11,7 @@ function showCrosby() {
     info.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             var name = JSON.parse(this.response);
-            var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assits: " + name.assists;
+            var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assists: " + name.assists;
                         
             document.getElementById("crosbyInfo").innerHTML = name;
         }
@@ -34,7 +34,7 @@ function showKessel() {
     info.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             var name = JSON.parse(this.response);
-            var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assits: " + name.assists;
+            var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assists: " + name.assists;
                         
             document.getElementById("kesselInfo").innerHTML = name;
         }
@@ -57,7 +57,7 @@ function showMalkin() {
     info.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             var name = JSON.parse(this.response);
-            var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assits: " + name.assists;
+            var name = "Team: " + name.team + "<br>" + "Player: " + name.player + "<br>" + "Points: " + name.points + "<br>" + "Goals: " + name.goals + "<br>" + "Assists: " + name.assists;
                         
             document.getElementById("malkinInfo").innerHTML = name;
         }
