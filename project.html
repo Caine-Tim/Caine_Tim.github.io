@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="projectStyle.css">
         <script src="projectJS.js"></script>
     </head>
-    <body>
+    <body onload="load()">
         <div class="body">
         <h1>Pittsburgh Penguins</h1>
             <p style="text-align: center";>Click a button to view stats for individual players</p>
@@ -33,9 +33,7 @@
             <h>Subscribe!</h>
             <p>Enter your email to subscibe to the Pittsburgh Penguins Newsletter</p>
             
-            <form id="email" action="">
-                Email: <input type="text" name="email" value="">
-            </form><br>
+            Email: <input type="text" id="email">
             <button onclick="store()">Subscribe</button><br>
             <div id="showEmail"></div>
         

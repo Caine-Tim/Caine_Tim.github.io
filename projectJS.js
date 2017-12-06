@@ -70,9 +70,18 @@ function showMalkin() {
 //store email
 function store() {
     'use strict';
-    var inputEmail = document.getElementById("email").value;
-    localStorage.setItem("email", inputEmail);
+    var inputEmail = document.getElementById('email').value;
+    localStorage.setItem('email', inputEmail);
     
-    var storedEmail = localStorage.getItem("email");
+    var storedEmail = localStorage.email;
     document.getElementById("showEmail").innerHTML = "Your email is: " + storedEmail;
+}
+
+//load localstorage
+function load() {
+    'use strict';
+    var loadEmail = localStorage.email;
+    if(loadEmail) {
+        document.getElementById("showEmail").innerHTML = "<p1>" + "*You have already submitted your email." + "</p1>";
+    }
 }
