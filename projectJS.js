@@ -69,8 +69,13 @@ function showMalkin() {
 
 //store email
 function store() {
-    var inputEmail = document.getElementById("email");
-    localStorage.setItem("email", inputEmail.value);
-    
-    document.getElementById("showEmail").innerHTML = "Your email is: " + localStorage.getItem("email");
+    var inputEmail = document.getElementById("email").value;
+    localStorage.setItem("email", inputEmail);
+}
+
+if (typeof(Storage) !== "undefined") {
+    localStorage.setItem("email", "email");
+    document.getElementById("showEmail").innerHTML = localStorage.getItem("email");
+} else {
+    document.getElementById("showEmail").innerHTML = "Your browser does not support Web Storage.";
 }
