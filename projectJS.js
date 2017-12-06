@@ -66,3 +66,11 @@ function showMalkin() {
     info.open("Get", "malkin.txt", true);
     info.send();
 }
+
+//store email
+function store() {
+    var inputEmail = document.getElementById("email");
+    localStorage.setItem("email", inputEmail.value);
+    
+    document.getElementById("showEmail").innerHTML = "Your email is: " + localStorage.getItem("email");
+}

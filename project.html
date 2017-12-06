@@ -9,27 +9,37 @@
     </head>
     <body>
         <div class="body">
-        <h1>Hockey Stats</h1>
-        <p style="text-align: center";>Click a button to view stats for individual players</p>
-        <div id="buttons">
-            <div id="left"><button onclick="showCrosby()">Sydney Crosby</button></div>
-            <div id="right"><button onclick="showKessel()">Phil Kessel</button></div>
-            <div id="center"><button onclick="showMalkin()">Evgeni Malkin</button></div>
-        </div><br><br>
+        <h1>Pittsburgh Penguins</h1>
+            <p style="text-align: center";>Click a button to view stats for individual players</p>
+            
+            <div id="buttons">
+                <div id="left"><button onclick="showCrosby()">Sydney Crosby</button></div>
+                <div id="right"><button onclick="showKessel()">Phil Kessel</button></div>
+                <div id="center"><button onclick="showMalkin()">Evgeni Malkin</button></div>
+            </div><br><br>
         
-        <div id="info">
-            <div id="picLeft"><img id="crosby" src="crosby.jpg" style="display:none;"/><br>
-                <div id="crosbyInfo"></div>
-            </div>
-            <div id="picRight"><img id="kessel" src="kessel.jpg" style="display:none;"/><br>
-                <div id="kesselInfo"></div>
-            </div>
-            <div id="picCenter"><img id="malkin" src="malkin.jpg" style="display:none;"/><br>
-                <div id="malkinInfo"></div>
-            </div>
-        </div><br>
+            <div id="info">
+                <div id="picLeft"><img id="crosby" src="crosby.jpg" style="display:none;"/><br>
+                    <div id="crosbyInfo"></div>
+                </div>
+                <div id="picRight"><img id="kessel" src="kessel.jpg" style="display:none;"/><br>
+                    <div id="kesselInfo"></div>
+                </div>
+                <div id="picCenter"><img id="malkin" src="malkin.jpg" style="display:none;"/><br>
+                    <div id="malkinInfo"></div>
+                </div>
+            </div><br>
+            
+            <h>Subscribe!</h>
+            <p>Enter your email to subscibe to the Pittsburgh Penguins Newsletter</p>
+            
+            <form id="email" action="">
+                Email: <input type="text" name="email">
+            </form><br>
+            <button onclick="store()">Subscribe</button><br>
+            <div id="showEmail"></div>
         
-        <audio autoplay loop><source src="pensTheme.mp3" type="audio/mpeg"></audio>
+            <audio autoplay loop><source src="pensTheme.mp3" type="audio/mpeg"></audio>
         </div>
     </body>
 </html>
