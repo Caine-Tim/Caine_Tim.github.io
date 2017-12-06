@@ -69,6 +69,7 @@ function showMalkin() {
 
 //store email
 function store() {
+    'use strict';
     var inputEmail = document.getElementById("email").value;
     localStorage.setItem("email", inputEmail);
     
