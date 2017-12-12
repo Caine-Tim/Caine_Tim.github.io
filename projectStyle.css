@@ -80,7 +80,7 @@ p1 {
 
 #picLeft {
     position: absolute;
-    top: 40%;
+    top: 44%;
     left: 26%;
     
     -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
@@ -92,7 +92,7 @@ p1 {
 
 #picRight {
     position: absolute;
-    top: 43%;
+    top: 45%;
     left: 75%;
     
     -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
@@ -104,7 +104,7 @@ p1 {
 
 #picCenter {
     position: absolute;
-    top: 43%;
+    top: 45%;
     left: 50%;
     
     -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
