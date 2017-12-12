@@ -116,6 +116,7 @@ p1 {
 
 #info {
     width: 100%;
+    overflow: auto;
 }
 
 #crosbyInfo {
