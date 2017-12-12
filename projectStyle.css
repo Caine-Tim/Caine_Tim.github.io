@@ -1,10 +1,11 @@
 html {
     background-image: url(ice.jpg);
+    position: absolute;
+    min-width: 100%;
 }
 
 div.body {
     display: block;
-    overflow: auto;
     background: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: auto;
