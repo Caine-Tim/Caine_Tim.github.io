@@ -73,8 +73,14 @@ function store() {
     var inputEmail = document.getElementById('email').value;
     localStorage.setItem('email', inputEmail);
     
+    var fName = document.getElementById('fname').value;
+    localStorage.setItem('fName', fName);
+    
+    var lName = document.getElementById('lname').value;
+    localStorage.setItem('lName', lName);
+    
     var storedEmail = localStorage.email;
-    document.getElementById("showEmail").innerHTML = "Your email is: " + storedEmail;
+    alert("Your name is: " + fName + " " + lName + "\nYour email is: " + inputEmail)
 }
 
 //load localstorage
@@ -82,6 +88,6 @@ function load() {
     'use strict';
     var loadEmail = localStorage.email;
     if(loadEmail) {
-        document.getElementById("showEmail").innerHTML = "<p1>" + "*You have already submitted your email." + "</p1>";
+        document.getElementById("showEmail").innerHTML = "<p1>" + "*You have already submitted your information." + "</p1>";
     }
 }
