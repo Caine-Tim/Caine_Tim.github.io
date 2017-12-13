@@ -4,6 +4,7 @@ html {
 
 div.body {
     display: block;
+    overflow: auto;
     background: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: auto;
@@ -78,10 +79,6 @@ p1 {
 }
 
 #picLeft {
-    position: absolute;
-    top: 44%;
-    left: 26%;
-    
     -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
     -moz-transform: translate(-50%,-50%); /* Firefox */
     -ms-transform: translate(-50%,-50%); /* IE 9 */
@@ -90,10 +87,6 @@ p1 {
 }
 
 #picRight {
-    position: absolute;
-    top: 45%;
-    left: 75%;
-    
     -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
     -moz-transform: translate(-50%,-50%); /* Firefox */
     -ms-transform: translate(-50%,-50%); /* IE 9 */
@@ -101,11 +94,7 @@ p1 {
     transform: translate(-50%,-50%);
 }
 
-#picCenter {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    
+#picCenter {    
     -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
     -moz-transform: translate(-50%,-50%); /* Firefox */
     -ms-transform: translate(-50%,-50%); /* IE 9 */
@@ -131,7 +120,6 @@ p1 {
 }
 
 #crosby {
-    float: left;
     border-radius: 50%;
     border-style: solid;
     border-color: black;
@@ -143,7 +131,7 @@ p1 {
   	transition: all 1s ease;
 }
 
-#malkin {
+#malkin {    
     border-radius: 50%;
     border-style: solid;
     border-color: black;
@@ -169,7 +157,7 @@ p1 {
 
 
 
-#picLeft:hover img {
+#crosby:hover {
     -webkit-transform:scale(1.25); /* Safari and Chrome */
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
@@ -177,7 +165,7 @@ p1 {
      transform:scale(1.25);
 }
 
-#picRight:hover img {
+#kessel:hover {
     -webkit-transform:scale(1.25); /* Safari and Chrome */
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
@@ -185,11 +173,15 @@ p1 {
      transform:scale(1.25);
 }
 
-#picCenter:hover img {
+#malkin:hover {
     -webkit-transform:scale(1.25); /* Safari and Chrome */
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
     -o-transform:scale(1.25); /* Opera */
      transform:scale(1.25);
+}
+
+#subscribe {
+    display: block;
 }
 
