@@ -3,7 +3,6 @@ function showCrosby() {
     'use strict';
     //show image
     document.getElementById('crosby').className ='classname';
-    document.getElementById('crosby').style.display='block';
                 
     //show json
     var info = new XMLHttpRequest();
@@ -26,7 +25,6 @@ function showKessel() {
     'use strict';
     //show image
     document.getElementById('kessel').className ='classname';
-    document.getElementById('kessel').style.display='block';
                 
     //show json
     var info = new XMLHttpRequest();
@@ -49,7 +47,6 @@ function showMalkin() {
     'use strict';
     //show image
     document.getElementById('malkin').className ='classname';
-    document.getElementById('malkin').style.display='block';
                 
     //show json
     var info = new XMLHttpRequest();
