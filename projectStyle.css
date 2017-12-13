@@ -28,11 +28,11 @@ p1 {
 }
 
 .classname {
-                -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-                -moz-animation: fadein 2s;    /* Firefox < 16 */
-                -ms-animation: fadein 2s;     /* Internet Explorer */
-                -o-animation: fadein 2s;      /* Opera < 12.1 */
-                animation: fadein 2s;
+            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 2s;    /* Firefox < 16 */
+            -ms-animation: fadein 2s;     /* Internet Explorer */
+            -o-animation: fadein 2s;      /* Opera < 12.1 */
+            animation: fadein 2s;
             }
             @keyframes fadein {
                 from { opacity: 0; }
@@ -95,6 +95,10 @@ p1 {
     width: 180px;
 }
 
+#info {
+    width: 100%;
+}
+
 #crosbyInfo {
     float: left;
 }
@@ -143,8 +147,6 @@ p1 {
   	-ms-transition: all 1s ease; /* Opera */
   	transition: all 1s ease;
 }
-
-
 
 #crosby:hover {
     -webkit-transform:scale(1.25); /* Safari and Chrome */
