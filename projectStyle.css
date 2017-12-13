@@ -183,5 +183,21 @@ p.click {
     color: white;
 }
 
+input {
+    margin-left: 5px;
+    margin-bottom: 1px;
+    padding-right: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+#email {
+    margin-left: 42px;
+    margin-bottom: 1px;
+    padding-right: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
 
 
