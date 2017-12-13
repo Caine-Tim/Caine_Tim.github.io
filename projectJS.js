@@ -77,7 +77,7 @@ function store() {
     localStorage.setItem('lName', lName);
     
     var storedEmail = localStorage.email;
-    alert("Your name is: " + fName + " " + lName + "\nYour email is: " + inputEmail)
+    alert("You have successfully subscribed!\nYour name is: " + fName + " " + lName + "\nYour email is: " + inputEmail)
 }
 
 //load localstorage
